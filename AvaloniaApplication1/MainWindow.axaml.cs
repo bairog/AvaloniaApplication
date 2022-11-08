@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using System;
 
 namespace AvaloniaApplication1
 {
@@ -7,6 +8,8 @@ namespace AvaloniaApplication1
         public MainWindow()
         {
             InitializeComponent();
+
+            Text1.Text = System.Reflection.Assembly.GetExecutingAssembly().Location;
         }
     }
 }

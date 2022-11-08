@@ -7,7 +7,7 @@
         Title="AvaloniaApplication1">
     
 	<Grid>
-		<TextBlock Text="Welcome to Avalonia!" />
+		<TextBlock x:Name="Text1" Text="Welcome to Avalonia!" />
 		<Button>Click me!</Button>
 	</Grid>
 </Window>
