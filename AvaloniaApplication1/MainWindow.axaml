@@ -7,7 +7,13 @@
         Title="AvaloniaApplication1">
     
 	<Grid>
-		<TextBlock x:Name="Text1" Text="Welcome to Avalonia!" />
-		<Button>Click me!</Button>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="3*"/>
+		</Grid.RowDefinitions>
+		<TextBlock Grid.Row="0" x:Name="Text1" Text="Welcome to Avalonia!" />
+		<TextBlock Grid.Row="1" x:Name="Text2" TextWrapping="Wrap" Text="Welcome to Avalonia!" />
+		<Button Grid.Row="2">Click me!</Button>
 	</Grid>
 </Window>
